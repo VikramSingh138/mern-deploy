@@ -16,7 +16,10 @@
     "test:verbose": "./scripts/test-verbose.sh",
     "test:coverage": "./scripts/test-coverage.sh",
     "test:watch-client": "./scripts/test-watch-client.sh",
-    "test:watch-server": "./scripts/test-watch-server.sh"
+    "test:watch-server": "./scripts/test-watch-server.sh",
+    "install:server": "npm install --legacy-peer-deps",
+    "install": "npm install --legacy-peer-deps",
+    "postinstall": "npm install --legacy-peer-deps"
   },
   "pre-commit": [
     "lint",
