@@ -17,8 +17,8 @@
     "test:coverage": "./scripts/test-coverage.sh",
     "test:watch-client": "./scripts/test-watch-client.sh",
     "test:watch-server": "./scripts/test-watch-server.sh",
-    "install:server": "npm install --legacy-peer-deps",
-    "install": "npm install --legacy-peer-deps"
+    "install:server": "npm install",
+    "install": "npm install && npm run install:server"
   },
   "pre-commit": [
     "lint",
